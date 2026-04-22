@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 프로그래밍 게시판</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>웹 프로그래밍 게시판 - 202610771 전상욱</h2>
+
+    <button class="btn btn-blue" onclick="openModal()">글쓰기</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>날짜</th>
+          <th>조회수</th>
+          <th>삭제</th>
+        </tr>
+      </thead>
+      <tbody id="post-list">
+        <tr>
+          <td colspan="6" class="empty-msg">불러오는 중...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="detail-view" id="detail-view" style="display:none;">
+      <h3 id="d-title"></h3>
+      <div class="detail-meta">
+        작성자: <strong id="d-author"></strong> &nbsp;|&nbsp;
+        날짜: <span id="d-date"></span> &nbsp;|&nbsp;
+        조회수: <span id="d-views"></span>
+      </div>
+      <div class="detail-body" id="d-body"></div>
+      <div class="detail-buttons">
+        <button class="btn btn-gray" onclick="closeDetail()">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-overlay" onclick="closeModal()"></div>
+  <div class="modal" id="modal">
+    <h3>글쓰기</h3>
+    <label>제목</label>
+    <input type="text" id="inp-title" placeholder="제목을 입력하세요">
+
+    <label>작성자</label>
+    <input type="text" id="inp-author" placeholder="이름을 입력하세요">
+
+    <label>내용</label>
+    <textarea id="inp-body" rows="5" placeholder="내용을 입력하세요"></textarea>
+
+    <div class="modal-buttons">
+      <button class="btn btn-gray" onclick="closeModal()">취소</button>
+      <button class="btn btn-blue" onclick="submitPost()">등록</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 24px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn-blue {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #2563eb;
+}
+
+.btn-gray {
+  background-color: #aaa;
+  color: white;
+}
+
+.btn-gray:hover {
+  background-color: #888;
+}
+
+.btn-red {
+  background: none;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-red:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  border-bottom: 2px solid #eee;
+}
+
+th {
+  padding: 12px;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+  text-align: center;
+  font-size: 14px;
+}
+
+.title-cell {
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+}
+
+.title-cell:hover {
+  color: #3b82f6;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #aaa;
+  padding: 30px;
+}
+
+tbody tr:hover {
+  background-color: #f0f7ff;
+}
+
+.detail-view {
+  margin-top: 30px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 24px;
+  background-color: #fafafa;
+}
+
+.detail-view h3 {
+  margin: 0 0 10px 0;
+  color: #222;
+  font-size: 18px;
+}
+
+.detail-meta {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-body {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  white-space: pre-wrap;
+  min-height: 60px;
+}
+
+.detail-buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+/* 모달 박스 */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 정중앙 배치 */
+  width: 480px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 32px;
+  z-index: 200;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.modal h3 {
+  margin: 0 0 20px 0;
+  color: #222;
+  font-size: 18px;
+}
+
+.modal label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+
+.modal input:focus,
+.modal textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.modal textarea {
+  resize: vertical;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
